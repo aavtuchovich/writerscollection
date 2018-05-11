@@ -19,8 +19,12 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
+<<<<<<< HEAD
 			<LinkPackageImports>rtl.bpi;vcl.bpi;dbrtl.bpi;dsnap.bpi;vcldb.bpi;adortl.bpi</LinkPackageImports>
 			<AllPackageLibs>rtl.lib;vcl.lib;dbrtl.lib;dsnap.lib;vcldb.lib;adortl.lib</AllPackageLibs>
+=======
+			<AllPackageLibs>rtl.lib;vcl.lib</AllPackageLibs>
+>>>>>>> 79c466583b130ac866cf3f2e918b85e5f3e5446c
 			<ProjectType>CppVCLApplication</ProjectType>
 			<PackageImports>vclx.bpi;vcl.bpi;vclimg.bpi;dbrtl.bpi;Rave77VCL.bpi;bdertl.bpi;rtl.bpi;bcbie.bpi;vclactnband.bpi;xmlrtl.bpi;bcbsmp.bpi;vcldb.bpi;vcldbx.bpi;vcltouch.bpi;dsnap.bpi;dsnapcon.bpi;TeeUI.bpi;Tee.bpi;TeeDB.bpi;vclib.bpi;ibxpress.bpi;adortl.bpi;IndyCore.bpi;IndySystem.bpi;IndyProtocols.bpi;inet.bpi;intrawebdb_100_140.bpi;Intraweb_100_140.bpi;VclSmp.bpi;vclie.bpi;websnap.bpi;webdsnap.bpi;inetdb.bpi;inetdbbde.bpi;inetdbxpress.bpi;soaprtl.bpi;vclribbon.bpi;dbexpress.bpi;DbxCommonDriver.bpi;DataSnapIndy10ServerTransport.bpi;DataSnapProviderClient.bpi;DataSnapServer.bpi;DbxClientDriver.bpi;DBXInterBaseDriver.bpi;DBXMySQLDriver.bpi;dbxcds.bpi;DBXFirebirdDriver.bpi;DBXSybaseASEDriver.bpi;DBXSybaseASADriver.bpi;DBXOracleDriver.bpi;DBXMSSQLDriver.bpi;DBXInformixDriver.bpi;DBXDb2Driver.bpi</PackageImports>
 			<Multithreaded>true</Multithreaded>
@@ -61,6 +65,7 @@
 			<ILINK_TranslatedLibraryPath>$(BDS)\lib\$(LANGDIR)\release;$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
 		</PropertyGroup>
 		<ItemGroup>
+<<<<<<< HEAD
 			<CppCompile Include="Unit1.cpp">
 				<Form>Form1</Form>
 				<DependentOn>Unit1.h</DependentOn>
@@ -91,6 +96,21 @@
 			<FormResources Include="Unit2.dfm"/>
 			<FormResources Include="Unit3.dfm"/>
 			<FormResources Include="Unit4.dfm"/>
+=======
+			<CppCompile Include="Project1.cpp">
+				<BuildOrder>0</BuildOrder>
+			</CppCompile>
+			<ResFiles Include="Project1.res">
+				<ModuleName>Project1.res</ModuleName>
+				<BuildOrder>1</BuildOrder>
+			</ResFiles>
+			<CppCompile Include="Unit1.cpp">
+				<Form>Form1</Form>
+				<DependentOn>Unit1.h</DependentOn>
+				<BuildOrder>2</BuildOrder>
+			</CppCompile>
+			<FormResources Include="Unit1.dfm"/>
+>>>>>>> 79c466583b130ac866cf3f2e918b85e5f3e5446c
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>

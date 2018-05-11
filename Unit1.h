@@ -7,16 +7,20 @@
 #include <Controls.hpp>
 #include <StdCtrls.hpp>
 #include <Forms.hpp>
+<<<<<<< HEAD
 #include <DB.hpp>
 #include <DBClient.hpp>
 #include <ADODB.hpp>
 #include <DBGrids.hpp>
 #include <Grids.hpp>
 #include <Menus.hpp>
+=======
+>>>>>>> 79c466583b130ac866cf3f2e918b85e5f3e5446c
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
 __published:	// IDE-managed Components
+<<<<<<< HEAD
 	TADOConnection *ADOConnection1;
 	TADOTable *ADOTable1;
 	TADOTable *ADOTable2;
@@ -39,6 +43,8 @@ __published:	// IDE-managed Components
 	void __fastcall N2Click(TObject *Sender);
 	void __fastcall N1Click(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
+=======
+>>>>>>> 79c466583b130ac866cf3f2e918b85e5f3e5446c
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);

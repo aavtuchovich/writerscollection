@@ -1,17 +1,24 @@
 object Form1: TForm1
   Left = 0
   Top = 0
+<<<<<<< HEAD
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #1057#1073#1086#1088' '#1089#1074#1077#1076#1077#1085#1080#1081' '#1086' '#1087#1080#1089#1072#1090#1077#1083#1103#1093' '#1080' '#1080#1093' '#1083#1080#1090#1077#1088#1072#1090#1091#1088#1085#1099#1093' '#1087#1088#1086#1080#1079#1074#1077#1076#1077#1085#1080#1103#1093
   ClientHeight = 271
   ClientWidth = 578
+=======
+  Caption = #1057#1073#1086#1088' '#1089#1074#1077#1076#1077#1085#1080#1081' '#1086' '#1087#1080#1089#1072#1090#1077#1083#1103#1093' '#1080' '#1080#1093' '#1083#1080#1090#1077#1088#1072#1090#1091#1088#1085#1099#1093' '#1087#1088#1086#1080#1079#1074#1077#1076#1077#1085#1080#1103#1093
+  ClientHeight = 361
+  ClientWidth = 638
+>>>>>>> 79c466583b130ac866cf3f2e918b85e5f3e5446c
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+<<<<<<< HEAD
   Menu = MainMenu1
   OldCreateOrder = False
   PixelsPerInch = 96
@@ -171,4 +178,9 @@ object Form1: TForm1
       OnClick = N4Click
     end
   end
+=======
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+>>>>>>> 79c466583b130ac866cf3f2e918b85e5f3e5446c
 end

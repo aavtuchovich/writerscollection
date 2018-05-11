@@ -4,9 +4,12 @@
 #pragma hdrstop
 
 #include "Unit1.h"
+<<<<<<< HEAD
 #include "Unit2.h"
 #include "Unit3.h"
 #include "Unit4.h"
+=======
+>>>>>>> 79c466583b130ac866cf3f2e918b85e5f3e5446c
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -17,6 +20,7 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+<<<<<<< HEAD
 
 
 void __fastcall TForm1::N4Click(TObject *Sender)
@@ -49,3 +53,5 @@ Form1->Close();
 }
 //---------------------------------------------------------------------------
 
+=======
+>>>>>>> 79c466583b130ac866cf3f2e918b85e5f3e5446c
