@@ -34,11 +34,19 @@ __published:	// IDE-managed Components
 	TDateTimeField *ADOTable2birthday;
 	TDateTimeField *ADOTable2death;
 	TButton *Button1;
+	TEdit *Edit1;
+	TComboBox *ComboBox1;
+	TButton *Button2;
+	TLabel *Label1;
 	void __fastcall N4Click(TObject *Sender);
 	void __fastcall N3Click(TObject *Sender);
 	void __fastcall N2Click(TObject *Sender);
 	void __fastcall N1Click(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall DBGrid1TitleClick(TColumn *Column);
+	void __fastcall Edit1Change(TObject *Sender);
+	void __fastcall FormActivate(TObject *Sender);
+	void __fastcall Button2Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);

@@ -5,6 +5,7 @@
 
 #include "Unit3.h"
 #include "Unit1.h"
+#include "Unit5.h"
 
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -20,7 +21,8 @@ __fastcall TForm3::TForm3(TComponent* Owner)
 
 void __fastcall TForm3::Button1Click(TObject *Sender)
 {
-Form5->Show();
+Form3->Close();
 }
 //---------------------------------------------------------------------------
+
 

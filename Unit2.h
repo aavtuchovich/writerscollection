@@ -20,6 +20,7 @@ __published:	// IDE-managed Components
 	TDBNavigator *DBNavigator1;
 	TDataSource *DataSource1;
 	TButton *Button1;
+	TLabel *Label1;
 	void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

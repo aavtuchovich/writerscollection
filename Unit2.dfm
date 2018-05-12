@@ -4,7 +4,7 @@ object Form2: TForm2
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #1055#1080#1089#1072#1090#1077#1083#1080
-  ClientHeight = 184
+  ClientHeight = 204
   ClientWidth = 724
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,9 +16,22 @@ object Form2: TForm2
   Scaled = False
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 7
+    Width = 203
+    Height = 22
+    Caption = #1057#1087#1080#1089#1086#1082' '#1074#1089#1077#1093' '#1087#1080#1089#1072#1090#1077#1083#1077#1081
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object DBGrid1: TDBGrid
     Left = 8
-    Top = 8
+    Top = 35
     Width = 705
     Height = 120
     DataSource = DataSource1
@@ -31,14 +44,15 @@ object Form2: TForm2
   end
   object DBNavigator1: TDBNavigator
     Left = 8
-    Top = 141
+    Top = 173
     Width = 240
     Height = 25
+    DataSource = DataSource1
     TabOrder = 1
   end
   object Button1: TButton
     Left = 638
-    Top = 142
+    Top = 174
     Width = 75
     Height = 25
     Caption = #1047#1072#1082#1088#1099#1090#1100
@@ -48,6 +62,6 @@ object Form2: TForm2
   object DataSource1: TDataSource
     DataSet = Form1.ADOTable2
     Left = 280
-    Top = 144
+    Top = 176
   end
 end
