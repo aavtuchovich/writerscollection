@@ -4,6 +4,8 @@
 #pragma hdrstop
 
 #include "Unit3.h"
+#include "Unit1.h"
+
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -14,3 +16,11 @@ __fastcall TForm3::TForm3(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+
+
+void __fastcall TForm3::Button1Click(TObject *Sender)
+{
+Form5->Show();
+}
+//---------------------------------------------------------------------------
+

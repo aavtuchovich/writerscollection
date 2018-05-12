@@ -1,32 +1,25 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-<<<<<<< HEAD
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #1057#1073#1086#1088' '#1089#1074#1077#1076#1077#1085#1080#1081' '#1086' '#1087#1080#1089#1072#1090#1077#1083#1103#1093' '#1080' '#1080#1093' '#1083#1080#1090#1077#1088#1072#1090#1091#1088#1085#1099#1093' '#1087#1088#1086#1080#1079#1074#1077#1076#1077#1085#1080#1103#1093
-  ClientHeight = 271
-  ClientWidth = 578
-=======
-  Caption = #1057#1073#1086#1088' '#1089#1074#1077#1076#1077#1085#1080#1081' '#1086' '#1087#1080#1089#1072#1090#1077#1083#1103#1093' '#1080' '#1080#1093' '#1083#1080#1090#1077#1088#1072#1090#1091#1088#1085#1099#1093' '#1087#1088#1086#1080#1079#1074#1077#1076#1077#1085#1080#1103#1093
-  ClientHeight = 361
-  ClientWidth = 638
->>>>>>> 79c466583b130ac866cf3f2e918b85e5f3e5446c
+  ClientHeight = 164
+  ClientWidth = 669
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-<<<<<<< HEAD
   Menu = MainMenu1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
   object DBGrid1: TDBGrid
     Left = 8
-    Top = 143
-    Width = 569
+    Top = 8
+    Width = 653
     Height = 120
     DataSource = DataSource1
     ReadOnly = True
@@ -39,46 +32,57 @@ object Form1: TForm1
     Columns = <
       item
         Expanded = False
-        FieldName = #1053#1072#1079#1074#1072#1085#1080#1077
+        FieldName = 'title'
+        Title.Caption = #1053#1072#1079#1074#1072#1085#1080#1077
+        Width = 120
         Visible = True
       end
       item
         Expanded = False
-        FieldName = #1060#1072#1084#1080#1083#1080#1103' '#1072#1074#1090#1086#1088#1072
-        Width = 110
+        FieldName = 'language'
+        Title.Caption = #1071#1079#1099#1082
+        Width = 70
         Visible = True
       end
       item
         Expanded = False
-        FieldName = #1048#1084#1103' '#1072#1074#1090#1086#1088#1072
-        Width = 75
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = #1071#1079#1099#1082
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = #1046#1072#1085#1088
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = #1058#1080#1088#1072#1078
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = #1048#1079#1076#1072#1090#1077#1083#1100#1089#1090#1074#1086
+        FieldName = 'type'
+        Title.Caption = #1046#1072#1085#1088
         Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'edition'
+        Title.Caption = #1048#1079#1076#1072#1090#1077#1083#1100#1089#1090#1074#1086
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'publish'
+        Title.Caption = #1054#1087#1091#1073#1083#1080#1082#1086#1074#1072#1085#1086
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'firstname'
+        Title.Caption = #1048#1084#1103
+        Width = 70
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'surname'
+        Title.Caption = #1060#1072#1084#1080#1083#1080#1103
+        Width = 70
         Visible = True
       end>
   end
   object Button1: TButton
-    Left = 472
-    Top = 40
+    Left = 586
+    Top = 134
     Width = 75
     Height = 25
     Caption = #1042#1099#1093#1086#1076
@@ -88,20 +92,27 @@ object Form1: TForm1
   object ADOConnection1: TADOConnection
     Connected = True
     ConnectionString = 
-      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\github\writersco' +
-      'llection\Database11.mdb;Persist Security Info=False'
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=./Dat' +
+      'abase11.mdb;Mode=Share Deny None;Jet OLEDB:System database="";Je' +
+      't OLEDB:Registry Path="";Jet OLEDB:Database Password="";Jet OLED' +
+      'B:Engine Type=5;Jet OLEDB:Database Locking Mode=1;Jet OLEDB:Glob' +
+      'al Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet O' +
+      'LEDB:New Database Password="";Jet OLEDB:Create System Database=F' +
+      'alse;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don'#39't Copy Local' +
+      'e on Compact=False;Jet OLEDB:Compact Without Replica Repair=Fals' +
+      'e;Jet OLEDB:SFP=False;'
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
-    Left = 216
-    Top = 8
+    Left = 632
+    Top = 56
   end
   object ADOTable1: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'books'
-    Left = 360
+    Left = 632
     Top = 8
   end
   object ADOTable2: TADOTable
@@ -109,7 +120,7 @@ object Form1: TForm1
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'Authors'
-    Left = 296
+    Left = 568
     Top = 8
     object ADOTable2surname: TWideStringField
       DisplayLabel = #1060#1072#1084#1080#1083#1080#1103
@@ -133,7 +144,6 @@ object Form1: TForm1
       DisplayLabel = #1044#1072#1090#1072' '#1088#1086#1078#1076#1077#1085#1080#1103
       DisplayWidth = 12
       FieldName = 'birthday'
-      DisplayFormat = '00-00-0000'
     end
     object ADOTable2death: TDateTimeField
       DisplayLabel = #1044#1072#1090#1072' '#1089#1084#1077#1088#1090#1080
@@ -143,8 +153,8 @@ object Form1: TForm1
   end
   object DataSource1: TDataSource
     DataSet = ADOQuery1
-    Left = 8
-    Top = 8
+    Left = 520
+    Top = 56
   end
   object ADOQuery1: TADOQuery
     Active = True
@@ -155,11 +165,11 @@ object Form1: TForm1
       
         'select books.*,authors.* from authors, books where authors.id = ' +
         'books.author_id')
-    Left = 144
-    Top = 8
+    Left = 568
+    Top = 56
   end
   object MainMenu1: TMainMenu
-    Left = 80
+    Left = 520
     Top = 8
     object N1: TMenuItem
       Caption = #1055#1080#1089#1072#1090#1077#1083#1080
@@ -178,9 +188,4 @@ object Form1: TForm1
       OnClick = N4Click
     end
   end
-=======
-  OldCreateOrder = False
-  PixelsPerInch = 96
-  TextHeight = 13
->>>>>>> 79c466583b130ac866cf3f2e918b85e5f3e5446c
 end
