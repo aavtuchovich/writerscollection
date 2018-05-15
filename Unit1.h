@@ -13,6 +13,8 @@
 #include <DBGrids.hpp>
 #include <Grids.hpp>
 #include <Menus.hpp>
+#include <ExtCtrls.hpp>
+#include <jpeg.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -38,6 +40,7 @@ __published:	// IDE-managed Components
 	TComboBox *ComboBox1;
 	TButton *Button2;
 	TLabel *Label1;
+	TAutoIncField *ADOTable2id;
 	void __fastcall N4Click(TObject *Sender);
 	void __fastcall N3Click(TObject *Sender);
 	void __fastcall N2Click(TObject *Sender);

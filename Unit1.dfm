@@ -4,8 +4,8 @@ object Form1: TForm1
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #1057#1073#1086#1088' '#1089#1074#1077#1076#1077#1085#1080#1081' '#1086' '#1087#1080#1089#1072#1090#1077#1083#1103#1093' '#1080' '#1080#1093' '#1083#1080#1090#1077#1088#1072#1090#1091#1088#1085#1099#1093' '#1087#1088#1086#1080#1079#1074#1077#1076#1077#1085#1080#1103#1093
-  ClientHeight = 234
-  ClientWidth = 669
+  ClientHeight = 180
+  ClientWidth = 663
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -32,8 +32,8 @@ object Form1: TForm1
   end
   object DBGrid1: TDBGrid
     Left = 8
-    Top = 80
-    Width = 653
+    Top = 56
+    Width = 656
     Height = 120
     DataSource = DataSource1
     ReadOnly = True
@@ -96,8 +96,8 @@ object Form1: TForm1
       end>
   end
   object Button1: TButton
-    Left = 586
-    Top = 206
+    Left = 580
+    Top = 25
     Width = 75
     Height = 25
     Caption = #1042#1099#1093#1086#1076
@@ -105,9 +105,9 @@ object Form1: TForm1
     OnClick = Button1Click
   end
   object Edit1: TEdit
-    Left = 167
+    Left = 159
     Top = 27
-    Width = 121
+    Width = 145
     Height = 21
     TabOrder = 2
     OnChange = Edit1Change
@@ -127,8 +127,8 @@ object Form1: TForm1
       #1071#1079#1099#1082)
   end
   object Button2: TButton
-    Left = 80
-    Top = 51
+    Left = 310
+    Top = 25
     Width = 145
     Height = 25
     Caption = #1054#1090#1084#1077#1085#1080#1090#1100' '#1092#1080#1083#1100#1090#1088#1072#1094#1080#1102
@@ -168,6 +168,11 @@ object Form1: TForm1
     TableName = 'Authors'
     Left = 568
     Top = 8
+    object ADOTable2id: TAutoIncField
+      DisplayLabel = #1053#1086#1084#1077#1088' '#1072#1074#1090#1086#1088#1072
+      FieldName = 'id'
+      ReadOnly = True
+    end
     object ADOTable2surname: TWideStringField
       DisplayLabel = #1060#1072#1084#1080#1083#1080#1103
       DisplayWidth = 35

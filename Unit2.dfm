@@ -14,6 +14,7 @@ object Form2: TForm2
   Font.Style = []
   OldCreateOrder = False
   Scaled = False
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel

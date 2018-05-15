@@ -20,3 +20,10 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 Form2->Close();
 }
 //---------------------------------------------------------------------------
+
+void __fastcall TForm2::FormClose(TObject *Sender, TCloseAction &Action)
+{
+Form1->DBGrid1->Refresh();
+}
+//---------------------------------------------------------------------------
+
